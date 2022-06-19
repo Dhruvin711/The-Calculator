@@ -1,0 +1,130 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  user-select: none;
+  background: #ecf0f3;
+  font-family: 'Prompt', sans-serif;
+  letter-spacing: 1px;
+}
+
+.container {
+  padding: 20px;
+  padding-right: 17px;
+  border-radius: 8px;
+  box-shadow: 13px 13px 20px #cbced1,
+            -13px -13px 20px #ffffff;
+  z-index: 1;
+}
+
+.container p {
+  margin: 5px auto -11px;
+  padding: 0 5px 0 0;
+  text-align: right;
+  color: #94B49F;
+}
+
+.display #screen {
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: .5em;
+  padding-right: .5em;
+  width: 96%;
+  height: 80px;
+  font-size: 40px;
+  color: #3B44F6;
+  outline: none;
+  border: none;
+  background: #ecf0f3;
+  border-radius: 6px;
+  box-shadow: inset 8px 8px 8px #cbced1,
+              inset -8px -8px 8px #fff;
+  user-select: none;
+  cursor: default;
+}
+
+.display #screen::placeholder {
+  color: #94B49F;
+}
+
+.row button {
+  width: 90px; height: 40px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  margin: 5px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 8px #00000020,
+            -5px -5px 8px #fff;
+  transition: .1s;
+  cursor: pointer;
+  color: #1B2430;
+}
+
+.row button:hover {
+  box-shadow: inset 5px 5px 8px rgba(16, 16, 16, .1),
+            inset -5px -5px 8px #fff;
+  background: #fff;
+}
+
+#eval {
+  background: #3AB0FF;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#eval:hover {
+  box-shadow: inset 5px 5px 8px #00ace6,
+            inset -5px -5px 8px #00ace6;
+}
+
+#ac {
+    background: #33cc33;
+    color: #fff;
+}
+
+#ac:hover {
+    box-shadow: inset 5px 5px 8px #2eb82e,
+        inset -5px -5px 8px #33cc33;
+}
+
+#ce {
+  background: #ff3399;
+  color: #fff;
+}
+
+#ce:hover {
+  box-shadow: inset 5px 5px 8px #e60073,
+              inset -5px -5px 8px #ff3399;
+}
+
+.blue {
+  width: 180px;
+  height: 180px;
+  background: blue;
+  border-radius: 100%;
+  filter: blur(180px);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 0;
+}
+
+.pink {
+  width: 180px;
+  height: 180px;
+  background: red;
+  border-radius: 100%;
+  filter: blur(180px);
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  z-index: 0;
+}

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="Calculator.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <title>The Calculator</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="display">
+      <input type="text" id="screen" placeholder="0">
+    </div>
+
+    <div class="btns">
+      <div class="row">
+
+        <button type="button" id="ce">CE</button>
+        <button type="button">x!</button>
+        <button type="button">(</button>
+        <button type="button">)</button>
+        <button type="button">%</button>
+        <button type="button" id="ac">AC</button>
+
+      </div>
+
+      <div class="row">
+
+        <button type="button">sin</button>
+        <button type="button">π</button>
+        <button type="button">7</button>
+        <button type="button">8</button>
+        <button type="button">9</button>
+        <button type="button">÷</button>
+
+      </div>
+
+      <div class="row">
+
+        <button type="button" onclick="cos()">cos</button>
+        <button type="button" onclick="log()">log</button>
+        <button type="button">4</button>
+        <button type="button">5</button>
+        <button type="button">6</button>
+        <button type="button">×</button>
+
+      </div>
+
+      <div class="row">
+
+        <button type="button">tan</button>
+        <button type="button">√</button>
+        <button type="button">1</button>
+        <button type="button">2</button>
+        <button type="button">3</button>
+        <button type="button">-</button>
+
+      </div>
+
+      <div class="row">
+
+        <button type="button">e</button>
+        <button type="button">x <span style="position: relative; bottom: .5em; right: .2em; font-size: 12PX;">2</span></button>
+        <button type="button">0</button>
+        <button type="button">.</button>
+        <button type="button" id="eval">=</button>
+        <button type="button">+</button>
+
+      </div>
+    </div>
+    <p>Dhruvin Prajapati</p>
+  </div>
+
+
+  <div class="blue"></div>
+  <div class="pink"></div>
+
+</body>
+
+<script src="index.js" charset="utf-8"></script>
+
+</html>
