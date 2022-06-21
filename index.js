@@ -93,3 +93,15 @@ document.addEventListener('keypress', (e) => {
       screen.value = eval(screen.value);
     }
 });
+
+document.body.addEventListener('keydown', () => {
+  var key = event.keyCode || event.charCode;
+
+  if(key == 8){
+    screen.value = screen.value.substr(0, screen.value.length - 1);
+  }
+  if(key == 46){
+    screen.value = '';
+  }
+
+});
